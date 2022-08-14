@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1653709857">
+  <File Type="ROUTE-PWR" Name="elevatortop_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="elevatortop.tcl"/>
+  <File Type="PWROPT-DCP" Name="elevatortop_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="elevatortop_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="elevatortop_reports.tcl"/>
+  <File Type="BG-DRC" Name="elevatortop.drc"/>
+  <File Type="OPT-HWDEF" Name="elevatortop.hwdef"/>
+  <File Type="OPT-DCP" Name="elevatortop_opt.dcp"/>
+  <File Type="OPT-DRC" Name="elevatortop_drc_opted.rpt"/>
+  <File Type="PLACE-DCP" Name="elevatortop_placed.dcp"/>
+  <File Type="PLACE-IO" Name="elevatortop_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="elevatortop_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="elevatortop_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="elevatortop_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="elevatortop_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="elevatortop_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="elevatortop_physopt.dcp"/>
+  <File Type="BG-BIT" Name="elevatortop.bit"/>
+  <File Type="ROUTE-ERROR-DCP" Name="elevatortop_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="elevatortop_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="elevatortop_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="elevatortop_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="elevatortop_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="elevatortop_drc_routed.rpx"/>
+  <File Type="BITSTR-MSK" Name="elevatortop.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="elevatortop_methodology_drc_routed.rpt"/>
+  <File Type="BG-BGN" Name="elevatortop.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="elevatortop_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="elevatortop.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="elevatortop_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="elevatortop.bin"/>
+  <File Type="ROUTE-PWR-RPX" Name="elevatortop_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="elevatortop_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="elevatortop_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="elevatortop_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="elevatortop_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="elevatortop_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="elevatortop_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="elevatortop.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="elevatortop_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="elevatortop_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-NKY" Name="elevatortop.nky"/>
+  <File Type="BITSTR-BMM" Name="elevatortop_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="elevatortop.mmi"/>
+  <File Type="BITSTR-LTX" Name="elevatortop.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="elevatortop.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ajxd.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/divclk.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dynamic_led2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/keyboard.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/led_5.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mainstate.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/elevatortop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="elevatortop"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/elevatorxdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

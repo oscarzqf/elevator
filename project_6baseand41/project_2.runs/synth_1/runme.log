@@ -1,0 +1,426 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tftg256-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23188 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 388.996 ; gain = 98.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'fenpin' [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/fenpin.v:23]
+INFO: [Synth 8-256] done synthesizing module 'fenpin' (1#1) [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/fenpin.v:23]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-638] synthesizing module 'ajxd' [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/ajxd.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ajxd' (2#1) [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/ajxd.v:23]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (3#1) [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-638] synthesizing module 'mainstate' [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/mainstate.v:23]
+WARNING: [Synth 8-567] referenced signal 'clk_count1' should be on the sensitivity list [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/mainstate.v:196]
+WARNING: [Synth 8-567] referenced signal 'clk_count0' should be on the sensitivity list [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/mainstate.v:196]
+INFO: [Synth 8-256] done synthesizing module 'mainstate' (4#1) [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/mainstate.v:23]
+INFO: [Synth 8-638] synthesizing module 'dynamic_led2' [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/dynamic_led2.v:23]
+WARNING: [Synth 8-567] referenced signal 'state' should be on the sensitivity list [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/dynamic_led2.v:51]
+WARNING: [Synth 8-567] referenced signal 'ledfloor' should be on the sensitivity list [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/dynamic_led2.v:51]
+INFO: [Synth 8-256] done synthesizing module 'dynamic_led2' (5#1) [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/dynamic_led2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (6#1) [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 441.172 ; gain = 150.363
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 441.172 ; gain = 150.363
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc]
+WARNING: [Vivado 12-507] No nets matched 'col_IBUF'. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dig[2]'. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dig[3]'. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dig[4]'. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dig[5]'. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dig[2]'. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dig[3]'. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dig[4]'. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dig[5]'. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/shudianshiyanpro/project_2/project_2.srcs/constrs_1/new/gatexdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 769.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 769.598 ; gain = 478.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tftg256-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 769.598 ; gain = 478.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 769.598 ; gain = 478.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_div_cnt0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_1k" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_div_cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_50" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_div_cnt2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_4s" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'ledfloor_reg' [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/mainstate.v:200]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 769.598 ; gain = 478.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 28    
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fenpin 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module ajxd 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module mainstate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 26    
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 12    
+Module dynamic_led2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element u1/clk_div_cnt2_reg was removed.  [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/fenpin.v:57]
+WARNING: [Synth 8-6014] Unused sequential element u1/clk_4s_reg was removed.  [D:/shudianshiyanpro/project_2/project_2.srcs/sources_1/new/fenpin.v:60]
+INFO: [Synth 8-5545] ROM "u1/clk_div_cnt0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u1/clk_1k" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u1/clk_div_cnt1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u1/clk_50" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u3/clk_count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u3/clk_count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u3/led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u3/led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u3/clk_count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u3/clk_count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u3/clk_count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u3/led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u3/state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u3/led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design top has port row[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port row[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port row[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port row[0] driven by constant 1
+WARNING: [Synth 8-3917] design top has port seg[7] driven by constant 0
+WARNING: [Synth 8-3917] design top has port seg[5] driven by constant 0
+WARNING: [Synth 8-3332] Sequential element (u2/u0/btn2_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u2/u1/btn2_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u2/u2/btn2_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u2/u3/btn2_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u4/num_reg[1]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 769.598 ; gain = 478.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 777.332 ; gain = 486.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 777.777 ; gain = 486.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 814.625 ; gain = 523.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 814.625 ; gain = 523.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 814.625 ; gain = 523.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 814.625 ; gain = 523.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 814.625 ; gain = 523.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 814.625 ; gain = 523.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 814.625 ; gain = 523.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    62|
+|3     |LUT1   |    22|
+|4     |LUT2   |    61|
+|5     |LUT3   |    90|
+|6     |LUT4   |   123|
+|7     |LUT5   |    46|
+|8     |LUT6   |   281|
+|9     |FDRE   |   151|
+|10    |LDC    |     1|
+|11    |LDP    |     1|
+|12    |IBUF   |     7|
+|13    |OBUF   |    18|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |   864|
+|2     |  u1     |fenpin       |   104|
+|3     |  u2     |keyboard     |    31|
+|4     |    u0   |ajxd         |     9|
+|5     |    u1   |ajxd_0       |     4|
+|6     |    u2   |ajxd_1       |     5|
+|7     |    u3   |ajxd_2       |     9|
+|8     |  u3     |mainstate    |   701|
+|9     |  u4     |dynamic_led2 |     2|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 814.625 ; gain = 523.816
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 814.625 ; gain = 195.391
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 814.625 ; gain = 523.816
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 1 instances
+  LDP => LDPE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 27 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 814.625 ; gain = 536.438
+INFO: [Common 17-1381] The checkpoint 'D:/shudianshiyanpro/project_2/project_2.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 814.625 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 26 10:55:19 2022...

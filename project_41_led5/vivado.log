@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon May 30 20:12:04 2022
+# Process ID: 31372
+# Current directory: D:/shudianshiyanpro/project_41_led5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28032 D:\shudianshiyanpro\project_41_led5\project_41_led5.xpr
+# Log file: D:/shudianshiyanpro/project_41_led5/vivado.log
+# Journal file: D:/shudianshiyanpro/project_41_led5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/shudianshiyanpro/project_41_led5/project_41_led5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tools/Xilinx/Xilinxapp/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tftg256-1
+Top: elevatortop
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 932.242 ; gain = 76.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'elevatortop' [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/elevatortop.v:23]
+INFO: [Synth 8-638] synthesizing module 'divclk' [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/divclk.v:23]
+INFO: [Synth 8-256] done synthesizing module 'divclk' (1#1) [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/divclk.v:23]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-638] synthesizing module 'ajxd' [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/ajxd.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ajxd' (2#1) [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/ajxd.v:23]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (3#1) [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-638] synthesizing module 'mainstate' [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/mainstate.v:23]
+WARNING: [Synth 8-567] referenced signal 'clk_count1' should be on the sensitivity list [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/mainstate.v:196]
+WARNING: [Synth 8-567] referenced signal 'clk_count0' should be on the sensitivity list [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/mainstate.v:196]
+INFO: [Synth 8-256] done synthesizing module 'mainstate' (4#1) [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/mainstate.v:23]
+INFO: [Synth 8-638] synthesizing module 'dynamic_led2' [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/dynamic_led2.v:23]
+WARNING: [Synth 8-567] referenced signal 'state' should be on the sensitivity list [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/dynamic_led2.v:51]
+WARNING: [Synth 8-567] referenced signal 'ledfloor' should be on the sensitivity list [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/dynamic_led2.v:51]
+INFO: [Synth 8-256] done synthesizing module 'dynamic_led2' (5#1) [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/dynamic_led2.v:23]
+INFO: [Synth 8-638] synthesizing module 'led_5' [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/led_5.v:23]
+INFO: [Synth 8-256] done synthesizing module 'led_5' (6#1) [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/led_5.v:23]
+INFO: [Synth 8-256] done synthesizing module 'elevatortop' (7#1) [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/sources_1/new/elevatortop.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 975.031 ; gain = 119.156
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 975.031 ; gain = 119.156
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tftg256-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 5 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/constrs_1/new/elevatorxdc.xdc]
+WARNING: [Vivado 12-507] No nets matched 'col_IBUF'. [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/constrs_1/new/elevatorxdc.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/constrs_1/new/elevatorxdc.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/shudianshiyanpro/project_41_led5/project_41_led5.srcs/constrs_1/new/elevatorxdc.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1334.590 ; gain = 478.715
+19 Infos, 5 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1334.590 ; gain = 478.715
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 30 22:31:09 2022...
